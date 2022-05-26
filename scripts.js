@@ -3,7 +3,7 @@ fetch('https://api.data.gov.sg/v1/environment/psi')
 .then(data =>{
     var entries = []
     readings = data.items[0].readings
-    time = new Date(data.items[0].timestamp).toLocaleString()
+    time = new Date(data.items[0].update_timestamp).toLocaleString()
     for (const item in readings) {
         entries.push({
             metric: item,
