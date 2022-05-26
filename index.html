@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- fonts, bootstrap, datatables, CSS-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka+One">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" href="style.css">
+    
+        <title>
+            PSI Readings
+        </title>
+
+    </head>
+    <body>
+        <h1 class="text-center hd" id="header">
+            PSI Table
+        </h1>
+
+        <p class="text-center" id="lastUpdated">
+        </p>
+
+        <div class="text-center" id="loader">
+            <div class="loadingBar">
+            </div>
+            <div style="padding-top: 1%;">
+                Loading...
+            </div>
+        </div>
+
+        <div class="container mb-5 mt-3">
+            <table class="table table-bordered text-center collapse" id="psiTable">
+                <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>National</th>
+                    <th>Central</th>
+                    <th>West</th>
+                    <th>East</th>
+                    <th>North</th>
+                    <th>South</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </body>
+
+    <!-- jQuery, bootstrap, datatables, scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+    <script src="scripts.js"></script> 
+</html>

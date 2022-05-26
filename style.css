@@ -1,0 +1,32 @@
+.hd{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: "Fredoka One";
+}
+
+.loadingBar{
+    position: absolute;
+    height: 2px;
+    background-color: turquoise;
+    width: 0%;
+    animation: loading 2s infinite;
+}
+
+@keyframes loading{
+    0% {
+        width: 0%;
+        left: 0%;
+    }
+    15% {
+        width: 25%;
+        left: 0%;
+    }
+    75%{
+        width: 25%;
+        left : 75%;
+    }
+    90%{
+        width: 0%;
+        left: 100%;
+    }
+}
